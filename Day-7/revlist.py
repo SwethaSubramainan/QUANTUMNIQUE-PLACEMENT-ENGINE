@@ -4,7 +4,6 @@ class ListNode:
         self.next = None
 
 
-# 🔹 Create Linked List from input
 def createLinkedList(arr):
     if not arr:
         return None
@@ -18,8 +17,6 @@ def createLinkedList(arr):
 
     return head
 
-
-# 🔹 Reverse Linked List
 def reverseList(head):
     prev = None
     curr = head
@@ -33,7 +30,6 @@ def reverseList(head):
     return prev
 
 
-# 🔹 Print Linked List
 def printList(head):
     temp = head
     while temp:
@@ -42,10 +38,9 @@ def printList(head):
     print("None")
 
 
-# 🔹 User Input
 arr = list(map(int, input("Enter elements: ").split()))
 
-# Create list
+
 head = createLinkedList(arr)
 
 print("Original:")
